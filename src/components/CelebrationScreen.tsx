@@ -10,9 +10,9 @@ const CelebrationScreen = ({ onStartGame }: Props) => {
   const [isOpened, setIsOpened] = useState(false);
 
   return (
-    <motion.div 
-      initial={{ opacity: 0 }} 
-      animate={{ opacity: 1 }} 
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
       exit={{ opacity: 0, x: -100 }}
       style={styles.container}
     >
@@ -21,12 +21,12 @@ const CelebrationScreen = ({ onStartGame }: Props) => {
         style={styles.content}
       >
         <h1 style={styles.title}>
-          {isOpened ? "Happy Birthday! ✨" : "선물이 도착했어요!"}
+          {isOpened ? "Happy Birthday! ❤️" : "선물이 도착했어요!"}
         </h1>
-        
+
         <p style={styles.subtitle}>
-          {isOpened 
-            ? "당신의 모든 날이 오늘처럼 빛나길 바래요.\n준비한 이벤트를 확인해보세요!" 
+          {isOpened
+            ? "당신의 모든 날이 오늘처럼 빛나길 바래요.\n준비한 이벤트를 확인해보세요!"
             : "박스를 클릭해서 선물을 확인해보세요."}
         </p>
 
@@ -35,7 +35,7 @@ const CelebrationScreen = ({ onStartGame }: Props) => {
         </div>
 
         {isOpened && (
-          <motion.button 
+          <motion.button
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             whileHover={{ scale: 1.05, boxShadow: '0 10px 20px rgba(255, 154, 158, 0.4)' }}
@@ -79,7 +79,8 @@ const styles = {
     whiteSpace: 'pre-line',
   },
   boxWrapper: {
-    height: '250px',
+    minHeight: '250px',
+    height: 'auto',
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',

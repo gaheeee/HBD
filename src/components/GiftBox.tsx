@@ -12,7 +12,7 @@ const GiftBox = ({ onOpen }: Props) => {
   const handleOpen = () => {
     if (isOpen) return;
     setIsOpen(true);
-    
+
     confetti({
       particleCount: 150,
       spread: 70,
@@ -29,14 +29,14 @@ const GiftBox = ({ onOpen }: Props) => {
         {!isOpen && (
           <motion.div
             initial={{ scale: 0.9, y: 20 }}
-            animate={{ 
-              scale: 1, 
+            animate={{
+              scale: 1,
               y: 0,
-              rotate: [0, -3, 3, -3, 3, 0] 
+              rotate: [0, -3, 3, -3, 3, 0]
             }}
-            transition={{ 
+            transition={{
               rotate: { repeat: Infinity, duration: 2, ease: "easeInOut" },
-              duration: 0.5 
+              duration: 0.5
             }}
             whileHover={{ scale: 1.05 }}
             style={styles.boxContainer}
@@ -56,7 +56,11 @@ const GiftBox = ({ onOpen }: Props) => {
           animate={{ scale: 1, opacity: 1 }}
           style={styles.openedMessage}
         >
-          <span style={{ fontSize: '4rem' }}>🌸</span>
+          <img
+            src='dog.jpeg'
+            alt="Gift"
+            style={styles.image}
+          />
         </motion.div>
       )}
     </div>
@@ -118,6 +122,21 @@ const styles = {
   },
   openedMessage: {
     textAlign: 'center',
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+    justifyContent: 'center',
+    width: '100%',
+  },
+  image: {
+    width: '100%',
+    maxWidth: '500px',
+    height: 'auto',
+    maxHeight: '70vh',
+    borderRadius: '20px',
+    boxShadow: '0 20px 40px rgba(0,0,0,0.15)',
+    objectFit: 'cover',
+    marginTop: '-50px', // Pull it up slightly to center it better in the wrapper
   },
 } as const;
 

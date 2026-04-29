@@ -10,7 +10,7 @@ const PasswordScreen = ({ onAuthenticated }: Props) => {
   const [password, setPassword] = useState('');
   const [error, setError] = useState(false);
 
-  const CORRECT_PASSWORD = '0429'; 
+  const CORRECT_PASSWORD = '0224';
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -24,7 +24,7 @@ const PasswordScreen = ({ onAuthenticated }: Props) => {
   };
 
   return (
-    <motion.div 
+    <motion.div
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       exit={{ opacity: 0, scale: 0.95, filter: 'blur(10px)' }}
@@ -34,9 +34,9 @@ const PasswordScreen = ({ onAuthenticated }: Props) => {
         <div style={styles.iconCircle}>
           <Lock size={32} color="#ff9a9e" />
         </div>
-        <h1 style={styles.title}>오늘의 주인공인가요?!</h1>
-        <p style={styles.subtitle}>입장을 위해 비밀번호를 입력해주세요.</p>
-        
+        <h1 style={styles.title}>오늘의 주인공인가요?</h1>
+        <p style={styles.subtitle}>비밀번호는 너와 나의 생일 조합 🔒</p>
+
         <form onSubmit={handleSubmit} style={styles.form}>
           <motion.input
             animate={error ? { x: [-10, 10, -10, 10, 0] } : {}}
@@ -44,17 +44,17 @@ const PasswordScreen = ({ onAuthenticated }: Props) => {
             type="password"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
-            placeholder="비밀번호 4자리"
+            placeholder="비밀번호 8자리"
             style={{
               ...styles.input,
               borderColor: error ? '#ff6b6b' : '#eee'
             }}
-            maxLength={4}
+            maxLength={8}
           />
-          <motion.button 
+          <motion.button
             whileHover={{ scale: 1.02 }}
             whileTap={{ scale: 0.98 }}
-            type="submit" 
+            type="submit"
             style={styles.button}
           >
             입장하기
