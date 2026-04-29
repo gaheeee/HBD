@@ -70,8 +70,8 @@ const GiftBox = ({ onOpen }: Props) => {
 const styles = {
   container: {
     position: 'relative',
-    width: '200px',
-    height: '200px',
+    width: '300px',
+    height: '300px',
     margin: '0 auto',
     cursor: 'pointer',
     display: 'flex',
@@ -130,13 +130,12 @@ const styles = {
   },
   image: {
     width: '100%',
-    maxWidth: '500px',
+    maxWidth: '800px',
     height: 'auto',
-    maxHeight: '70vh',
+    maxHeight: '80vh',
     borderRadius: '20px',
     boxShadow: '0 20px 40px rgba(0,0,0,0.15)',
     objectFit: 'cover',
-    marginTop: '-50px', // Pull it up slightly to center it better in the wrapper
   },
 } as const;
 

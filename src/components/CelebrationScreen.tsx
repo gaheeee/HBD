@@ -26,7 +26,7 @@ const CelebrationScreen = ({ onStartGame }: Props) => {
 
         <p style={styles.subtitle}>
           {isOpened
-            ? "당신의 모든 날이 오늘처럼 빛나길 바래요.\n준비한 이벤트를 확인해보세요!"
+            ? "강강묵 생일축하해!!\n내가 세상에서 제일 축하해 🥳"
             : "박스를 클릭해서 선물을 확인해보세요."}
         </p>
 
@@ -43,7 +43,7 @@ const CelebrationScreen = ({ onStartGame }: Props) => {
             onClick={onStartGame}
             style={styles.button}
           >
-            선물 받으러 가기
+            선물 고??
           </motion.button>
         )}
       </motion.div>
