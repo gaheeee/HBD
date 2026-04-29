@@ -158,12 +158,8 @@ const LadderScreen = () => {
           {[0, 1, 2].map((i) => (
             <div key={i} style={styles.giftSlot}>
               {result && !isMoving ? (
-                <motion.div initial={{ scale: 0 }} animate={{ scale: 1 }} style={{ width: '100%', height: '100%' }}>
-                  <img
-                    src={GIFTS[i].image}
-                    alt={GIFTS[i].name}
-                    style={{ width: '100%', height: '100%', objectFit: 'cover', borderRadius: '6px' }}
-                  />
+                <motion.div initial={{ scale: 0 }} animate={{ scale: 1 }} style={{ fontSize: '0.7rem', fontWeight: 'bold', color: '#ff9a9e', textAlign: 'center' }}>
+                  {GIFTS[i].name}
                 </motion.div>
               ) : '?'}
             </div>
@@ -175,7 +171,7 @@ const LadderScreen = () => {
       <AnimatePresence>
         {result && !isMoving && (
           <motion.div initial={{ opacity: 0, scale: 0.8 }} animate={{ opacity: 1, scale: 1 }} style={styles.modalOverlay}>
-            <div style={{ ...styles.modal, maxWidth: showAll ? '600px' : '350px' }}>
+            <div style={{ ...styles.modal, maxWidth: showAll ? '350px' : '350px' }}>
               {!showAll ? (
                 <>
                   <h2 style={{ color: '#ff9a9e' }}>미쳤다;;</h2>
@@ -210,7 +206,7 @@ const LadderScreen = () => {
                         <img
                           src={g.image}
                           alt={g.name}
-                          style={{ width: '100px', height: '100px', objectFit: 'cover', borderRadius: '10px' }}
+                          style={{ width: '80px', height: '80px', objectFit: 'cover', borderRadius: '10px' }}
                         />
                         <p style={{ fontSize: '0.9rem', marginTop: '0.5rem' }}>{g.name}</p>
                       </motion.div>
@@ -248,7 +244,7 @@ const styles = {
   subBtn: { marginTop: '2rem', padding: '0.8rem 1.5rem', borderRadius: '1rem', border: 'none', background: '#f0f0f0', color: '#666', cursor: 'pointer' },
   allGifts: { marginTop: '3rem', padding: '2rem', background: 'rgba(255,255,255,0.6)', borderRadius: '2rem', textAlign: 'center' },
   giftGrid: { display: 'flex', justifyContent: 'center', gap: '0.5rem', marginTop: '1rem' },
-  miniGift: { position: 'relative', padding: '1rem', background: '#fff', borderRadius: '1rem' },
+  miniGift: { position: 'relative', padding: '0.2rem', background: '#fff', borderRadius: '1rem' },
   giftBadge: {
     position: 'absolute',
     top: '5px',
