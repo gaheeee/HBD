@@ -34,7 +34,7 @@ const PasswordScreen = ({ onAuthenticated }: Props) => {
         <div style={styles.iconCircle}>
           <Lock size={32} color="#ff9a9e" />
         </div>
-        <h1 style={styles.title}>오늘의 주인공인가요?</h1>
+        <h1 style={styles.title}>오늘의 주인공인가요?!</h1>
         <p style={styles.subtitle}>입장을 위해 비밀번호를 입력해주세요.</p>
         
         <form onSubmit={handleSubmit} style={styles.form}>
