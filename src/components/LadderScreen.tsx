@@ -226,7 +226,7 @@ const LadderScreen = () => {
 };
 
 const styles = {
-  container: { display: 'flex', flexDirection: 'column', alignItems: 'center', padding: '5rem 1rem 3rem', minHeight: '100vh', width: '100vw' },
+  container: { display: 'flex', flexDirection: 'column', alignItems: 'center', padding: '5rem 1rem 3rem', minHeight: '100dvh', width: '100vw' },
   title: { fontSize: '2rem', fontWeight: '800', color: '#4a4a4a', marginBottom: '0.5rem' },
   subtitle: { color: '#999', },
   subtitle2: { color: '#999', marginBottom: '3rem' },
@@ -239,7 +239,7 @@ const styles = {
   pointer: { position: 'absolute', width: '16px', height: '16px', background: '#ff9a9e', borderRadius: '50%', boxShadow: '0 0 10px #ff9a9e', zIndex: 10 },
   resultRow: { display: 'flex', justifyContent: 'space-between', marginTop: '2rem', width: '210px' },
   giftSlot: { width: '40px', height: '40px', background: '#fff', borderRadius: '8px', border: '2px dashed #ddd', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '1.2rem' },
-  modalOverlay: { position: 'fixed', top: 0, left: 0, width: '100vw', height: '100vh', background: 'rgba(0,0,0,0.4)', display: 'flex', justifyContent: 'center', alignItems: 'center', zIndex: 100, backdropFilter: 'blur(5px)' },
+  modalOverlay: { position: 'fixed', top: 0, left: 0, width: '100vw', height: '100dvh', background: 'rgba(0,0,0,0.4)', display: 'flex', justifyContent: 'center', alignItems: 'center', zIndex: 100, backdropFilter: 'blur(5px)' },
   modal: { background: '#fff', padding: '3rem', borderRadius: '2.5rem', textAlign: 'center', width: '90%', maxWidth: '350px' },
   subBtn: { marginTop: '2rem', padding: '0.8rem 1.5rem', borderRadius: '1rem', border: 'none', background: '#f0f0f0', color: '#666', cursor: 'pointer' },
   allGifts: { marginTop: '3rem', padding: '2rem', background: 'rgba(255,255,255,0.6)', borderRadius: '2rem', textAlign: 'center' },
