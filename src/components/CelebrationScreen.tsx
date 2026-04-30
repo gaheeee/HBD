@@ -17,7 +17,7 @@ const CelebrationScreen = ({ onStartGame }: Props) => {
       style={styles.container}
     >
       <motion.div
-        animate={isOpened ? { y: -20 } : {}}
+        animate={{}}
         style={styles.content}
       >
         <h1 style={styles.title}>

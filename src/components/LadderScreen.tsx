@@ -226,7 +226,7 @@ const LadderScreen = () => {
 };
 
 const styles = {
-  container: { display: 'flex', flexDirection: 'column', alignItems: 'center', padding: '3rem 1rem', minHeight: '100vh', width: '100vw' },
+  container: { display: 'flex', flexDirection: 'column', alignItems: 'center', padding: '5rem 1rem 3rem', minHeight: '100vh', width: '100vw' },
   title: { fontSize: '2rem', fontWeight: '800', color: '#4a4a4a', marginBottom: '0.5rem' },
   subtitle: { color: '#999', },
   subtitle2: { color: '#999', marginBottom: '3rem' },
