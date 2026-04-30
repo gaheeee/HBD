@@ -57,7 +57,7 @@ const GiftBox = ({ onOpen }: Props) => {
           style={styles.openedMessage}
         >
           <img
-            src='dog.jpeg'
+            src='we.jpeg'
             alt="Gift"
             style={styles.image}
           />

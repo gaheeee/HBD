@@ -3,9 +3,9 @@ import { motion, AnimatePresence } from 'framer-motion';
 import confetti from 'canvas-confetti';
 
 const GIFTS = [
-  { id: 1, name: '갤럭시 워치8', image: 'watch.jpg' },
-  { id: 2, name: '갤럭시 워치8', image: 'watch.jpg' },
-  { id: 3, name: '갤럭시 워치8', image: 'watch.jpg' },
+  { id: 1, name: '갤럭시워치⌚️', image: 'watch.jpg' },
+  { id: 2, name: '갤럭시워치⌚️', image: 'watch.jpg' },
+  { id: 3, name: '갤럭시워치⌚️', image: 'watch.jpg' },
 ];
 
 // 가로줄 정의 (row: 높이, from: 시작 기둥 인덱스, to: 끝 기둥 인덱스)

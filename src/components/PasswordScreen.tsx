@@ -10,7 +10,7 @@ const PasswordScreen = ({ onAuthenticated }: Props) => {
   const [password, setPassword] = useState('');
   const [error, setError] = useState(false);
 
-  const CORRECT_PASSWORD = '0224';
+  const CORRECT_PASSWORD = '05030224';
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
